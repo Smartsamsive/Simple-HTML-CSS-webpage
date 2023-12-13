@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    height: 100%;
+    font-family: 'Arial', Helvetica, Tahoma, Verdana, sans-serif;
+}
+
+/* Header Styles */
+.nav {
+    height: 40vh;
+    background-image: url(./Snapshot/12.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a, .navbar ul li button {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.navbar ul li button {
+    background-color: red;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 6px 26px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li button:hover {
+    transform: scale(1.2);
+    transition: all .2s;
+}
+
+.navText {
+    margin: auto;
+    width: 38%;
+    color: white;
+}
+
+.navText h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.navText p {
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.navText button {
+    padding: 10px 28px;
+    color: white;
+    background-color: #36b8fe;
+    border: none;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.navText button:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+/* Gallery Styles */
+.gallery {
+    padding: 10px;
+    height: 50vh;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.navButton {
+    margin: auto;
+    width: 38%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navButton button {
+    cursor: pointer;
+    padding: 7px 26px;
+    border-radius: 25px;
+    border: 1px solid #36b8fe;
+    background-color: transparent;
+    color: #36b8fe;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.navButton button:hover {
+    background-color: #36b8fe;
+    color: white;
+}
+
+.navButton button:first-child {
+    background-color: #36b8fe;
+    color: white;
+}
+
+.galleryPictures {
+    width: 50%;
+    margin: auto;
+    height: 37vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+/* Gallery Image Styles */
+.galleryPictures div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px; /* Adjust as needed for equal height and width */
+}
+
+.galleryimg1 {
+    background-image: url(./Snapshot/3.jpg);
+}
+
+.galleryimg2 {
+    background-image: url(./Snapshot/2.jpg);
+}
+
+.galleryimg3 {
+    background-image: url(./Snapshot/4.jpg);
+}
+
+.galleryimg4 {
+    background-image: url(./Snapshot/6.jpg);
+}
+
+.galleryimg5 {
+    background-image: url(./Snapshot/5.jpg);
+}
+
+.galleryimg6 {
+    background-image: url(./Snapshot/8.jpg);
+    height: 150px;
+    position: relative;
+    top: -5px;
+}
+
+.galleryimg7 {
+    background-image: url(./Snapshot/10.jpg);
+    height: 150px;
+}
+
+.galleryimg8 {
+    background-image: url(./Snapshot/7.jpg);
+    height: 150px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 770px) {
+    .navText {
+        width: 80%;
+    }
+
+    .galleryPictures {
+        width: 80%;
+    }
+}
